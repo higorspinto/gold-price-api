@@ -1,5 +1,5 @@
 from datetime import datetime
-
+from flask import jsonify
 
 def get_gold_price():
 
@@ -24,4 +24,4 @@ def get_gold_price():
                     }
 
 
-    return response_object
+    return jsonify(response_object)
